@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(247, 157, 242);
+    text-align: center;
+}
+h3{
+    background-color: rgb(236, 177, 236);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+}
+.p{
+    color: black;
+    background-color:rgba(255, 1, 158, 0.103);
+    padding: 10px;
+}
+.conteudo{
+    color: aliceblue;
+    background-color: rgba(255, 1, 158, 0.103);
+}
+footer{
+    background-color: rgba(255, 253, 255, 0.137);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    padding: 1px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+.rodapé{
+    color: antiquewhite;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}

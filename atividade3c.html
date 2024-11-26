@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="atividade3c.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+</head>
+
+<body>
+    <div class="cabeçalho">
+        <h3>Cronômetro</h3>
+    </div>
+    <div class="p">
+        <p>Tempo: <span id="tempo">0</span> segundos</p>
+    </div>
+    <div class="conteudo">
+        <button onclick="iniciarCronometro()">Iniciar</button>
+        <button onclick="pararCronometro()">Parar</button>
+        <button onclick="resetarCronometro()">Reiniciar
+    </div>
+    <footer>
+        <div class="logo">
+            <img class="logo" src="mtech_transparente.png" alt="logo">
+        </div>
+        <div class="texto">
+            <p>Desenvolvido por Alicia</p>
+            <p>Edifício Central</p>
+            <p>61 98009 6947</p>
+        </div>
+
+    </footer>
+    <script>
+        let tempo = 0;
+        let intervalo;
+        function iniciarCronometro() {
+            intervalo = setInterval(() => {
+                tempo++;
+                document.getElementById('tempo').textContent = tempo;
+            }, 1000);
+        }
+        function pararCronometro() {
+            clearInterval(intervalo);
+        }
+        function resetarCronometro() {
+            tempo = 0;
+            document.getElementById('tempo').textContent = tempo;
+            clearInterval(intervalo);
+        }
+    </script>
+</body>
+
+</html>
